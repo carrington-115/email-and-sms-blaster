@@ -2,7 +2,12 @@ interface skeletonType {
   type: string;
 }
 
-interface inputType {
+export interface inputType {
   inputType: string;
   inputPlaceholder: string;
+}
+
+export interface formType {
+  formTitle: string;
+  formData: inputType[];
 }

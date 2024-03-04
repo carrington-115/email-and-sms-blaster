@@ -1,1 +1,3 @@
-export {};
+import InputElement from "./InputElement";
+
+export { InputElement };
