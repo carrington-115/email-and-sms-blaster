@@ -1,0 +1,3 @@
+interface skeletonType {
+  type: string;
+}
