@@ -1,11 +1,28 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  DashboardLayout,
+  EmailDashboard,
+  Login,
+  Records,
+  Signup,
+  SmsDashboard,
+} from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1 style={{ color: "black" }}>Welcome to the email and sms blaster</h1>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="user-login" element={<Login />} />
+          <Route path="user-signup" element={<Signup />} />
+          <Route path="/" element={<DashboardLayout />}>
+            <Route index element={<SmsDashboard />} />
+            <Route path="email-dashboard" element={<EmailDashboard />} />
+            <Route path="records" element={<Records />} />
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
