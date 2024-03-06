@@ -21,7 +21,7 @@ function App() {
           <Route path="dashboard" element={<DashboardLayout />}>
             <Route index element={<SmsDashboard />} />
             <Route path="email-dashboard" element={<EmailDashboard />} />
-            <Route path="records-dashboard" element={<Records />} />
+            <Route path="records" element={<Records />} />
           </Route>
         </Routes>
       </Router>

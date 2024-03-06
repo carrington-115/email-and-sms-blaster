@@ -2,6 +2,10 @@ import { inputType } from "../types";
 
 const signupData: inputType[] = [
   {
+    inputType: "text",
+    inputPlaceholder: "Name",
+  },
+  {
     inputType: "email",
     inputPlaceholder: "Email",
   },

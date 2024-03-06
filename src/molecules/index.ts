@@ -1,3 +1,4 @@
 import FormComponent from "./FormComponent";
+import SideBar from "./SideBar";
 
-export { FormComponent };
+export { FormComponent, SideBar };
