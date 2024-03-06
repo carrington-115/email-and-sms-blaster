@@ -4,6 +4,7 @@ import SmsDashboard from "./SmsDashboard";
 import Signup from "./Signup";
 import Login from "./Login";
 import Records from "./Records";
+import LoadingPage from "./LoadingPage";
 export {
   DashboardLayout,
   EmailDashboard,
@@ -11,4 +12,5 @@ export {
   Login,
   Signup,
   Records,
+  LoadingPage,
 };

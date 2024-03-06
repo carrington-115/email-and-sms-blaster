@@ -7,6 +7,7 @@ import {
   Records,
   Signup,
   SmsDashboard,
+  LoadingPage,
 } from "./pages";
 
 function App() {
@@ -14,12 +15,13 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+          <Route path="/" element={<LoadingPage />} />
           <Route path="user-login" element={<Login />} />
           <Route path="user-signup" element={<Signup />} />
-          <Route path="/" element={<DashboardLayout />}>
+          <Route path="dashboard" element={<DashboardLayout />}>
             <Route index element={<SmsDashboard />} />
             <Route path="email-dashboard" element={<EmailDashboard />} />
-            <Route path="records" element={<Records />} />
+            <Route path="records-dashboard" element={<Records />} />
           </Route>
         </Routes>
       </Router>

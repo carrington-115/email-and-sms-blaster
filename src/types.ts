@@ -10,4 +10,5 @@ export interface inputType {
 export interface formType {
   formTitle: string;
   formData: inputType[];
+  formSubmitAction: () => void;
 }
