@@ -12,3 +12,8 @@ export interface formType {
   formData: inputType[];
   formSubmitAction: () => void;
 }
+
+export interface signInButtonType {
+  icon: HTMLDivElement;
+  text: string;
+}
