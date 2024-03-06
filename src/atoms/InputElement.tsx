@@ -22,7 +22,7 @@ function InputElement({ inputType, inputPlaceholder }: inputType) {
             border: `${
               inputActive
                 ? `1px solid ${colors.lightMode.primaryColor}`
-                : "none"
+                : `1px solid transparent`
             }`,
             outline: `${colors.lightMode.primaryColor}`,
           }}
