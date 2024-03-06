@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 interface skeletonType {
   type: string;
 }
@@ -14,6 +16,6 @@ export interface formType {
 }
 
 export interface signInButtonType {
-  icon: HTMLDivElement;
+  icon: ReactNode;
   text: string;
 }

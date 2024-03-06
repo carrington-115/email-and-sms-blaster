@@ -1,30 +1,8 @@
 import styled from "styled-components";
 import colors from "../data/colors";
 import { FormComponent } from "../molecules";
-import { inputType } from "../types";
+import { signupData } from "../data/signInData";
 
-const signupData: inputType[] = [
-  {
-    inputType: "email",
-    inputPlaceholder: "Email",
-  },
-  {
-    inputType: "password",
-    inputPlaceholder: "Password",
-  },
-  {
-    inputType: "password",
-    inputPlaceholder: "Password",
-  },
-  {
-    inputType: "text",
-    inputPlaceholder: "Country",
-  },
-  {
-    inputType: "tel",
-    inputPlaceholder: "Phone number",
-  },
-];
 function Signup() {
   return (
     <>
