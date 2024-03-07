@@ -28,6 +28,15 @@ export default function BlasterSection({ type }: blasterType) {
       console.log(e);
     }
   }
+  function removeFromBlaster(elementToRemove: string) {
+    setBlasterItems((prevArray) => {
+      const index = prevArray.indexOf(elementToRemove);
+      if (index !== -1) {
+        return [...prevArray.slice(0, index), ...prevArray.slice(index + 1)];
+      }
+      return prevArray;
+    });
+  }
 
   useEffect(() => {
     setTimeout(() => {
@@ -98,7 +107,7 @@ export default function BlasterSection({ type }: blasterType) {
         {blasterItems.map((text: string, index: number) => (
           <ContactElement
             key={index}
-            removeItem={() => console.log(text)}
+            removeItem={() => removeFromBlaster(text)}
             text={text}
           />
         ))}
@@ -185,7 +194,7 @@ const Container = styled.section`
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
-  padding: 20px 40px;
+  padding: 40px;
   border-radius: 20px;
   .input-section {
     display: flex;
