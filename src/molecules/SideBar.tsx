@@ -30,7 +30,7 @@ function SideBar() {
             fill={colors.lightMode.primaryColor}
           />
         }
-        link="/dashboard"
+        link="/dashboard/sms-dashboard"
         menuStatus={menuStatus}
       />
       <LinkComponent

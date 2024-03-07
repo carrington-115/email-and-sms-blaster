@@ -18,4 +18,16 @@ function DashboardLayout() {
 }
 export default DashboardLayout;
 
-const Container = styled.div``;
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .sidebar {
+    max-width: 20vw;
+  }
+  .main-area {
+    min-width: 80vw;
+    max-width: 90vw;
+    height: 100vh;
+  }
+`;
