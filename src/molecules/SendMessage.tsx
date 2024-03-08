@@ -10,9 +10,9 @@ function SendMessage() {
   const { pathname } = useLocation();
 
   function sendMessageFunc() {
-    if (pathname === "/dashboard/sms-dashboard") {
+    if (pathname === "/dashboard/sms-dashboard" && message !== "") {
       console.log("Send the sms", message);
-    } else if (pathname === "/dashboard/email-dashboard") {
+    } else if (pathname === "/dashboard/email-dashboard" && message !== "") {
       console.log("send the email", message);
     }
   }
@@ -41,8 +41,8 @@ function SendMessage() {
           <span onClick={sendMessageFunc}>
             <AiOutlineSend
               style={{
-                width: "98px",
-                height: "98px",
+                width: "64px",
+                height: "64px",
                 fill: `${colors.lightMode.primaryColor}`,
               }}
             />
