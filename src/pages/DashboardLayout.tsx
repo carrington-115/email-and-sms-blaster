@@ -1,10 +1,8 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { SendMessage, SideBar } from "../molecules";
 import styled from "styled-components";
 
 function DashboardLayout() {
-  const { pathname } = useLocation();
-
   return (
     <>
       <Container>

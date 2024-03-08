@@ -41,8 +41,8 @@ function SendMessage() {
           <span onClick={sendMessageFunc}>
             <AiOutlineSend
               style={{
-                width: "64px",
-                height: "64px",
+                width: "48px",
+                height: "48px",
                 fill: `${colors.lightMode.primaryColor}`,
               }}
             />
@@ -62,7 +62,7 @@ const Container = styled.section`
   padding: 15px 50px;
   border-radius: 100px;
   input {
-    font-size: 36px;
+    font-size: 24px;
     border: none;
     outline: none;
     width: 40vw;

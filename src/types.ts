@@ -19,3 +19,18 @@ export interface signInButtonType {
   icon: ReactNode;
   text: string;
 }
+
+export type userType = {
+  name: string;
+  email: string;
+  phone: string;
+  dateOfBirth: string;
+  country: string;
+};
+
+export interface stateType {
+  user: userType;
+  emails: string[];
+  phoneNumbers: string[];
+  message: string;
+}
