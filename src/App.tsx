@@ -8,6 +8,7 @@ import {
   Signup,
   SmsDashboard,
   LoadingPage,
+  UserProfile,
 } from "./pages";
 import appInitialState from "./app/StateData";
 import { useState } from "react";
@@ -32,6 +33,7 @@ function App() {
             <Route path="dashboard" element={<DashboardLayout />}>
               <Route path="sms-dashboard" element={<SmsDashboard />} />
               <Route path="email-dashboard" element={<EmailDashboard />} />
+              <Route path="user-profile" element={<UserProfile />} />
               <Route path="records" element={<Records />} />
             </Route>
           </Routes>

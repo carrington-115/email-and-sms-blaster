@@ -6,6 +6,7 @@ import colors from "../data/colors";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoIosArrowBack } from "react-icons/io";
 import { FaList } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 
 function SideBar() {
   const [menuStatus, setMenuStatus] = useState<boolean>(true);
@@ -49,6 +50,12 @@ function SideBar() {
         linkName="Records"
         icon={<FaList style={iconStyle} fill={colors.lightMode.primaryColor} />}
         link="/dashboard/records"
+        menuStatus={menuStatus}
+      />
+      <LinkComponent
+        linkName="User profile"
+        icon={<FaUser style={iconStyle} fill={colors.lightMode.primaryColor} />}
+        link="/dashboard/user-profile"
         menuStatus={menuStatus}
       />
       <section className="resize">

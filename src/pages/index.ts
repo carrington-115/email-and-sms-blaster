@@ -5,6 +5,7 @@ import Signup from "./Signup";
 import Login from "./Login";
 import Records from "./Records";
 import LoadingPage from "./LoadingPage";
+import UserProfile from "./UserProfile";
 export {
   DashboardLayout,
   EmailDashboard,
@@ -13,4 +14,5 @@ export {
   Signup,
   Records,
   LoadingPage,
+  UserProfile,
 };
