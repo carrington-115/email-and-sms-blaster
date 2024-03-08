@@ -11,9 +11,9 @@ function SendMessage() {
 
   function sendMessageFunc() {
     if (pathname === "/dashboard/sms-dashboard") {
-      console.log("Send the sms");
+      console.log("Send the sms", message);
     } else if (pathname === "/dashboard/email-dashboard") {
-      console.log("send the email");
+      console.log("send the email", message);
     }
   }
 
