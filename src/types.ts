@@ -33,4 +33,5 @@ export interface stateType {
   emails: string[];
   phoneNumbers: string[];
   message: string;
+  updateState?: () => void;
 }

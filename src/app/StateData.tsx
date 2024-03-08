@@ -1,6 +1,6 @@
 import { stateType } from "../types";
 
-const appState: stateType = {
+const appInitialState: stateType = {
   user: {
     name: "",
     email: "",
@@ -13,4 +13,4 @@ const appState: stateType = {
   message: "I am Mark",
 };
 
-export default appState;
+export default appInitialState;
