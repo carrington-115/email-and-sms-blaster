@@ -5,7 +5,6 @@ function SmsDashboard() {
   return (
     <Container>
       <BlasterSection type="sms" />
-      hello
     </Container>
   );
 }

@@ -1,8 +1,10 @@
-import { Outlet } from "react-router-dom";
-import { SideBar } from "../molecules";
+import { Outlet, useLocation } from "react-router-dom";
+import { SendMessage, SideBar } from "../molecules";
 import styled from "styled-components";
 
 function DashboardLayout() {
+  const { pathname } = useLocation();
+
   return (
     <>
       <Container>
@@ -11,6 +13,7 @@ function DashboardLayout() {
         </section>
         <section className="main-area">
           <Outlet />
+          <SendMessage />
         </section>
       </Container>
     </>
@@ -29,5 +32,9 @@ const Container = styled.div`
     min-width: 80vw;
     max-width: 90vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 `;
